@@ -9,4 +9,5 @@ for month in range(months):
     deficit = total_spend - salary
     money_capital += deficit  # Добавляем недостающие средства к подушке безопасности
 
-print(f"Подушка безопасности, чтобы протянуть {months} месяцев без долгов:", int(money_capital))
+money_capital=round(money_capital, 2)
+print(f"Подушка безопасности, чтобы протянуть {months} месяцев без долгов:", money_capital)
